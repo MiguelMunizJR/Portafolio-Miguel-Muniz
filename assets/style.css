@@ -5,10 +5,11 @@
     --color-dark-primary: #26262bf3;
     --color-dark-secundary: #29292e;
     --color-green-primary: #3ba787;
+    --color-green-terminal: #339175;
     --color-green-secundary: #3ba78731;
     --color-white: #ffffff;
     --color-white-primary: #e5e5e5;
-    --color-light-gray: #c2c2c2;
+    --color-light-gray: #c9c9c9;
 }
 
 /**********************************************/
@@ -53,46 +54,70 @@ footer {
 
 /* Header title container*/
 .header-title__container {
-    margin: 1rem 0 0 1rem;
+    margin: .5rem 0 0 1rem;
 }
 
 /* Header title */
 .header-title {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 500;
 }
 
 /* Header title "Muñiz" */
 .header-title span{
-    font-weight: 100;
+    padding: 0 .1rem;
+    color: var(--color-white);
+    background-color: var(--color-green-primary);
+    border-radius: .2rem;
+    font-weight: 200;
 }
 
 /* Header container link */
 .nav {
-    padding: 0 1rem;
+    padding: 1rem;
     position: absolute;
-    opacity: 0;
-    display: flex;
-    gap: .5rem;
+    top: .3rem;
+    right: 0;
+    display: none;
+    gap: 1.1rem;
     z-index: 600;
 }
 
 /* Header links */
 .nav-link {
-    color: var(--color-green-primary);
-    font-size: 1rem;
+    color: var(--color-light-gray);
+    font-size: .9rem;
     font-weight: 400;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Header links hover */
+.nav-link:hover {
+    color: var(--color-green-primary);
+}
+
+/* icon links < */
+.nav-link .fa-angle-left {
+    padding-right: .2rem;
+    display: none;
+}
+
+/* icon links > */
+.nav-link .fa-angle-right {
+    padding-left: .2rem;
+    display: none;
 }
 
 /* Hero ícon menu*/
 .fa-bars {
     position: absolute;
-    top: 1rem;
+    top: 1.25rem;
     right: 1rem;
+    display: flex;
     font-size: 1.5rem;
     color: var(--color-green-primary);
-    opacity: 1;
     z-index: 550;
     cursor: pointer;
 }
@@ -162,7 +187,7 @@ footer {
     width: auto;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
     z-index: 30;
 }
 
@@ -171,8 +196,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2.3rem;
-    height: 2.3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border: .1rem solid var(--color-green-primary);
     border-radius: 50%;
     color: var(--color-white-primary);
@@ -182,7 +207,7 @@ footer {
 
 /* Hero icons*/
 .hero-icons .fa-brands {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 /* Hero title*/
@@ -201,9 +226,9 @@ footer {
 /* Hero subtitle developer */
 .hero-subtitle__container {
     margin-top: 1rem;
-    padding: .3rem;
+    padding: .5rem;
     position: relative;
-    width: 11rem;
+    display: inline-block;
     background-color: var(--color-green-primary);
     border-radius: 1.5rem;
 }
@@ -211,16 +236,17 @@ footer {
 /* Hero subtitle*/
 .hero-subtitle {
     color: var(--color-white-primary);
-    font-size: .9rem;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 /* Hero subtitle info*/
 .hero-subtitle__info {
     margin-top: 1rem;
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--color-light-gray);
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    color: var(--color-white-primary);
 }
 
 /* Hero button */
@@ -250,13 +276,14 @@ footer {
 
 /* Hero button title*/
 .hero-btn-link h4 {
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 
 /* Hero button icon*/
 .fa-envelope {
-    font-size: 1.2rem;
+    margin-right: -.25rem;
+    font-size: 1.1rem;
 }
 
 /**********************************************/
@@ -275,9 +302,16 @@ footer {
     font-size: 1.5rem;
 }
 
+.container .fa-angle-right {
+    padding: 0 .5rem;
+    color: var(--color-green-terminal);
+    font-size: 1.5rem;
+}
+
 /* About me */
 .about-me {
-    margin-top: 4rem;
+    padding-top: 5rem;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -288,15 +322,20 @@ footer {
     margin-top: 1.5rem;
     color: var(--color-light-gray);
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
+}
+
+.about-me span {
+    color: var(--color-green-primary);
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 /**********************************************/
 
 /* Skills */
 .skills {
-    margin-top: 5rem;
-    padding: .5rem;
+    padding-top: 6rem;
     display: flex;
     flex-direction: column;
 }
@@ -325,9 +364,11 @@ footer {
 
 /* Skills card*/
 .card {
-    min-width: 10rem;
-    min-height: 10rem;
-    padding: 1.2rem .5rem; 
+    min-width: 15rem;
+    min-height: 12rem;
+    padding: 1rem 1rem; 
+    display: flex;
+    flex-direction: column;
     border-radius: .5rem;
     background-color: var(--color-dark-primary);
     border: .1rem solid var(--color-green-primary);
@@ -342,32 +383,41 @@ footer {
 /* Skills card icons*/
 .icon-skill {
     display: inline-block;
-    width: 1.1rem;
-    margin-bottom: 1.2rem;
+    width: 1.2rem;
+    margin-bottom: 1.5rem;
     margin-left: .5rem;
 }
 
 /* Skills card title*/
 .card h4 {
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    font-size: 1rem;
-    font-weight: 500;
+    margin-bottom: .7rem;
+    margin-left: .5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 /* Skills card description*/
 .card p {
     color: var(--color-light-gray);
-    font-size: .9rem;
-    line-height: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.7rem;
     font-weight: 300;
+}
+
+.skill-projects {
+    margin-top: 2.5rem;
+    color: var(--color-green-primary);
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
 }
 
 /**********************************************/
 
 /* Experience */
 .experience {
-    margin-top: 5rem;
+    padding-top: 5rem;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -375,15 +425,22 @@ footer {
 
 /* Experience title */
 .experience h2 {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
-/* Experience container*/
+.experience-container {
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* Experience card*/
 .experience-card {
     margin: 0 auto 1.2rem;
     padding: 1rem;
-    max-width: 25rem;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     background-color: var(--color-green-primary);
@@ -437,16 +494,17 @@ footer {
 /**********************************************/
 
 /* Portfolio */
-.portfolio {
+.projects {
+    padding-top: 5rem;
+    margin: 0 auto;
     width: 90vw;
-    margin: 5rem auto 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 /* Portfolio title */
-.portfolio h2 {
+.projects h2 {
     margin-bottom: 1.5rem;
     text-align: center;
 }
@@ -490,7 +548,9 @@ footer {
 
 /* Contact */
 .contact {
-    margin-top: 6rem;
+    padding-top: 5rem;
+    margin: 0 auto 2rem;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -504,6 +564,7 @@ footer {
 /* Contact container */
 .contact-container {
     margin-top: 1rem;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -627,18 +688,20 @@ footer {
     .img4 {
         width: 90%;
     }
-
-    .contact-container {
-        margin-top: 0;
-        flex-direction: row;
-    }
-
 }
 
 /* 600px */
-@media screen and (min-width: 600px){
-    
-    .skills-card {
+@media screen and (min-width: 600px) {
+
+    .contact {
+        margin: 0 auto;
+        width: 90vw;
+    }
+
+    .contact-container {
+        margin: 0 auto;
+        width: 90vw;
+        flex-direction: row;
         justify-content: space-evenly;
     }
 }
@@ -647,12 +710,16 @@ footer {
 @media screen and (min-width: 768px) {
 
     .header-title__container {
-        padding: 2rem;
+        padding: 0 1.5rem;
+    }
+
+    .header-title {
+        font-size: 1.3rem;
     }
 
     .fa-bars {
         font-size: 1.8rem;
-        right: 2.5rem;
+        right: 2rem;
     }
 
     .hero-icons {
@@ -660,12 +727,12 @@ footer {
     }
 
     .hero-link {
-        width: 3rem;
-        height: 3rem;
+        width: 2.7rem;
+        height: 2.7rem;
     }
 
     .fa-brands {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .hero-btn-div {
@@ -673,21 +740,9 @@ footer {
         height: 1.3rem;
     }
 
-    .skills-card {
-        justify-content: space-evenly;
-    }
-
     .card {
         max-height: max-content;
         max-width: max-content;
-    }
-
-    .card h4 {
-        font-size: 1rem;
-    }
-
-    .card p {
-        font-size: .9rem;
     }
 
     .experience-container {
@@ -697,7 +752,7 @@ footer {
     }
 
     .experience-card {
-        width: 12rem;
+        width: 10rem;
         flex-direction: column;
         justify-content: center;
         text-align: center;
@@ -745,11 +800,37 @@ footer {
     }
 }
 
+/* 850px */
+@media screen and (min-width: 850px) {
+
+    .nav {
+        display: flex;
+        right: 1rem;
+    }
+
+    .fa-bars {
+        display: none;
+        opacity: 0;
+    }
+
+    .img {
+        margin-top: 3rem;
+    }
+}
+
+/* 905px */
+@media screen and (min-width: 905px) {
+
+    .skills-card {
+        justify-content: space-evenly;
+    }
+}
+
 /* 1024px */
 @media screen and (min-width: 1024px) {
 
-    .header-title {
-        font-size: 1.3rem;
+    .nav {
+        gap: 2rem;
     }
 
     .hero {
@@ -765,7 +846,8 @@ footer {
     }
 
     .hero-subtitle__info {
-        margin-bottom: rem;
+        margin-top: 0;
+        font-weight: 300;
     }
 
     .hero-btn-link h4 {
@@ -774,18 +856,18 @@ footer {
     }
 
     .about-me {
-        margin: 5rem auto 0;
         width: 80vw;
     }
 
     .skills-card {
-        margin: 1.5rem auto 0;
+        margin: 1rem auto 0;
         width: 80vw;
         justify-content: space-evenly;
+        gap: 3rem;
     }
 
     .card {
-        width: 15rem;
+        width: 20rem;
         height: 12rem;
     }
     
@@ -795,17 +877,17 @@ footer {
     }
 
     .experience {
-        margin: 5rem auto 0;
-        width: 80vw;
+        margin: 0 auto;
+        width: 70vw;
     }
     
     .experience-container {
-        margin: 0 auto;
-        width: 80vw;
-        justify-content: center;
+        width: 70vw;
+        justify-content: space-evenly;
+        gap: 3rem;
     }
 
-    .portfolio {
+    .projects {
         width: 80vw;
     }
 
@@ -816,12 +898,8 @@ footer {
         gap: 8vw;
     }
 
-    .contact {
-        margin: 6rem auto 2rem;
-    }
-
     .contact-container {
-        width: 80vw;
+        width: 75vw;
     }
 }
 

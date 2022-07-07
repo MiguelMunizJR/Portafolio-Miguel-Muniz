@@ -10,22 +10,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/0ac5016376.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/assets/images/logo.png">
     <title>Miguel Muñiz | Portafolio</title>
 </head>
 <body>
     <header>
-
         <div class="header-title__container">
             <h3 class="header-title">Miguel  <span>Muñiz</span></h3>
         </div>
-        <!-- <article class="nav">
-            <a href="#" class="nav-link">Home</a>
-            <a href="#" class="nav-link">About me</a>
-            <a href="#" class="nav-link">Skills</a>
-            <a href="#" class="nav-link">Experience</a>
-            <a href="#" class="nav-link">Portfolio</a>
-            <a href="#" class="nav-link">Contact</a>
-        </article> -->
+
+        <article class="nav">
+            <a href="#hero_link" class="nav-link"><i class="fa-solid fa-angle-left"></i>Home<i class="fa-solid fa-angle-right"></i></a>
+            <a href="#about-me_link" class="nav-link"><i class="fa-solid fa-angle-left"></i>About me<i class="fa-solid fa-angle-right"></i></a>
+            <a href="#skills_link" class="nav-link"><i class="fa-solid fa-angle-left"></i>Skills<i class="fa-solid fa-angle-right"></i></a>
+            <a href="#experience_link" class="nav-link"><i class="fa-solid fa-angle-left"></i>Experience<i class="fa-solid fa-angle-right"></i></a>
+            <a href="#portfolio_link" class="nav-link"><i class="fa-solid fa-angle-left"></i>Projects<i class="fa-solid fa-angle-right"></i></a>
+            <a href="#contact_link" class="nav-link"><i class="fa-solid fa-angle-left"></i>Contact<i class="fa-solid fa-angle-right"></i></a>
+        </article>
 
         <!-- icon menu -->
         <div class="menu-icon">
@@ -33,7 +34,7 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="hero_link">
         <article class="hero-article">
             <article class="hero-img__container">
                 <div class="img">
@@ -54,7 +55,7 @@
                     <a href="https://twitter.com/JuniorMBJR" target="_blank" class="hero-link">
                         <i class="fa-brands fa-twitter"></i>
                     </a>
-                    <a href="https://api.whatsapp.com/send?phone=523322103564&text=Hola,%20te%20contacto%20desde%20tu%20portafolio." target="_blank" class="hero-link">
+                    <a href="https://api.whatsapp.com/send?phone=+523322103564&text=Hola,%20te%20contacto%20desde%20tu%20portafolio." target="_blank" class="hero-link">
                         <i class="fa-brands fa-whatsapp"></i>
                     </a>
                 </div>
@@ -65,33 +66,34 @@
             <div class="hero-subtitle__container">
                 <h4 class="hero-subtitle">Full-Stack Developer</h4>
             </div>
-            <h6 class="hero-subtitle__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, ab?</h6>
+            <h6 class="hero-subtitle__info">Web designer and developer</h6>
         </article>
         <!-- button -->
         <div class="hero-btn">
             <a href="mailto:miguelmunizb@hotmail.com" class="hero-btn-link">
                 <div class="hero-btn-div">
                     <i class="fa-solid fa-envelope"></i>
-                    <h4>Contáctame</h4>
+                    <h4>Contact me!</h4>
                 </div>
             </a>
         </div>
     </section>
     <section class="container">
-        <article class="about-me">
-            <h2>Acerca de mí</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ipsam at a deleniti doloremque. Sint expedita voluptatibus delectus cum, in itaque reiciendis sequi repellendus eligendi est sapiente facilis tenetur eius excepturi quis laboriosam possimus.</p>
+        <article class="about-me" id="about-me_link">
+            <h2><i class="fa-solid fa-angle-right"></i>About me</h2>
+            <p>Hi! I'm a fullstack web developer, i am from the city of Guadalajara, Mexico. I enjoy building from small business sites to the most complicated projects. <br><br><span>I love programming!</span></p>
         </article>
-        <article class="skills">
-            <h2>Mis habilidades</h2>
+        <article class="skills" id="skills_link">
+            <h2><i class="fa-solid fa-angle-right"></i>Skills</h2>
             <article class="skills-scroll">
                 <div class="skills-card">
                     <div class="card">
                         <div class="skill-icon">
-                            <img src="/assets/images/ligth bulb.svg" alt="bulb" class="icon-skill">
-                            <h4 class="skill-ux">UX/UI Design</h4>
+                            <img src="/assets/images/smartphone.svg" alt="smartphone" class="icon-skill">
+                            <h4 class="skill-ux">Responsive Design</h4>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum.</p>
+                        <p>General knowledge of layout and responsive design using HTML, CSS and Javascript.</p>
+                        <a href="#" class="skill-projects">2 PROJECTS</a>
                     </div>
                     <div class="card">
                         <div class="skill-icon">
@@ -100,6 +102,7 @@
                             <h4>Product Designer</h4>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum.</p>
+                        <a href="#" class="skill-projects">2 PROJECTS</a>
                     </div>
                     <div class="card">
                         <div class="skill-icon">
@@ -107,12 +110,13 @@
                             <h4>Interactive Design</h4>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum.</p>
+                        <a href="#" class="skill-projects">2 PROJECTS</a>
                     </div>
                 </div>
             </article>
         </article>
-        <article class="experience">
-            <h2>Experiencia</h2>
+        <article class="experience" id="experience_link">
+            <h2><i class="fa-solid fa-angle-right"></i>Experience</h2>
             <div class="experience-container">
                 <div class="experience-card">
                     <div class="experience-img">
@@ -123,7 +127,7 @@
                         <h5>UI Designer</h5>
                         <p>2022-2022</p>
                     </div>
-                    <h4 class="card-year">1 Año</h4>
+                    <h4 class="card-year">1 YEAR</h4>
                 </div>
                 <div class="experience-card">
                     <div class="experience-img">
@@ -134,7 +138,7 @@
                         <h5>Senior UX/UI</h5>
                         <p>2022-2022</p>
                     </div>
-                    <h4 class="card-year">1 Año</h4>
+                    <h4 class="card-year">1 YEAR</h4>
                 </div>
                 <div class="experience-card">
                     <div class="experience-img">
@@ -145,12 +149,12 @@
                         <h5>Design UI/UX</h5>
                         <p>2022-2022</p>
                     </div>
-                    <h4 class="card-year">1 Año</h4>
+                    <h4 class="card-year">1 YEAR</h4>
                 </div>
             </div>
         </article>
-        <article class="portfolio">
-            <h2>Portafolio</h2>
+        <article class="projects" id="projecs_link">
+            <h2><i class="fa-solid fa-angle-right"></i>Projects</h2>
             <div class="img-container">
                 <img src="/assets/images/img1.jpg" alt="image1" class="img1">
                 <img src="/assets/images/img2.jpg" alt="image2" class="img2">
@@ -158,8 +162,8 @@
                 <img src="/assets/images/img4.jpg" alt="image4" class="img4">
             </div>
         </article>
-        <article class="contact">
-            <h2>Contacto</h2>
+        <article class="contact" id="contact_link">
+            <h2><i class="fa-solid fa-angle-right"></i>Contact</h2>
             <article class="contact-container">
                 <a href="tel:+523322103564"
                 class="contact-link">
@@ -168,7 +172,7 @@
                             <i class="fa-solid fa-phone"></i>
                         </div>
                 </a>
-                        <h4>Número celular</h4>
+                        <h4>Phone number</h4>
                         <p>+52 3322103564</p>
                     </div>
             
