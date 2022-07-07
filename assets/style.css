@@ -90,7 +90,7 @@ footer {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: var(--color-green-primary);
     opacity: 1;
     z-index: 550;
@@ -122,44 +122,6 @@ footer {
     opacity: 8%;
 }
 
-/* Hero title*/
-.hero-title {
-    margin-top: 1.5rem;
-    color: var(--color-white-primary);
-    font-size: 3rem;
-    font-weight: 800;
-}
-
-/* Hero title "Muñiz" */
-.hero-title span {
-    font-weight: 100;
-}
-
-/* Hero subtitle developer */
-.hero-subtitle__container {
-    margin-top: 1rem;
-    padding: .4rem .6rem;
-    position: relative;
-    width: 11rem;
-    background-color: var(--color-green-primary);
-    border-radius: 1.5rem;
-}
-
-/* Hero subtitle*/
-.hero-subtitle {
-    color: var(--color-white-primary);
-    font-size: 1rem;
-    font-weight: 300;
-}
-
-/* Hero subtitle info*/
-.hero-subtitle__info {
-    margin-top: 2rem;
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: var(--color-light-gray);
-}
-
 /* Hero container profile */
 .hero-img__container {
     display: flex;
@@ -178,8 +140,8 @@ footer {
     flex-flow: wrap column;
     justify-content: center;
     align-items: center;
-    width: 16rem;
-    height: 16rem;
+    width: 15rem;
+    height: 15rem;
     border-radius: 50%;
     background-color: var(--color-green-secundary);
     z-index: 10;
@@ -187,7 +149,7 @@ footer {
 
 /* Hero image*/
 .hero-img {
-    width: 12rem;
+    width: 11rem;
     position: absolute;
     border-radius: 50%;
     border: .7rem solid var(--color-green-primary);
@@ -196,7 +158,7 @@ footer {
 
 /* Hero icons container*/
 .hero-icons {
-    margin: 1rem auto;
+    margin: .7rem auto;
     width: auto;
     display: flex;
     justify-content: center;
@@ -209,8 +171,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 2.3rem;
+    height: 2.3rem;
     border: .1rem solid var(--color-green-primary);
     border-radius: 50%;
     color: var(--color-white-primary);
@@ -220,7 +182,45 @@ footer {
 
 /* Hero icons*/
 .hero-icons .fa-brands {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+}
+
+/* Hero title*/
+.hero-title {
+    margin-top: 1rem;
+    color: var(--color-white-primary);
+    font-size: 2.7rem;
+    font-weight: 800;
+}
+
+/* Hero title "Muñiz" */
+.hero-title span {
+    font-weight: 100;
+}
+
+/* Hero subtitle developer */
+.hero-subtitle__container {
+    margin-top: 1rem;
+    padding: .3rem;
+    position: relative;
+    width: 11rem;
+    background-color: var(--color-green-primary);
+    border-radius: 1.5rem;
+}
+
+/* Hero subtitle*/
+.hero-subtitle {
+    color: var(--color-white-primary);
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+/* Hero subtitle info*/
+.hero-subtitle__info {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-light-gray);
 }
 
 /* Hero button */
@@ -232,12 +232,11 @@ footer {
 
 /* Hero button container*/
 .hero-btn-div {
-    margin: 3rem auto 2rem;
-    padding: .8rem;
+    margin: 1.5rem auto 1.5rem;
+    padding: .7rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-green-primary);
     border: .15rem solid var(--color-green-primary);
     border-radius: 2rem;
     gap: .8rem;
@@ -406,7 +405,7 @@ footer {
 
 /* Experience card title*/
 .experience-card h4 {
-    color: var(--color-white-primary);
+    color: var(--color-white);
     font-size: 1rem;
     font-weight: 600;
 }
@@ -414,7 +413,7 @@ footer {
 /* Experience card subtitle */
 .experience-card h5 {
     margin-top: .2rem;
-    color: var(--color-light-gray);
+    color: var(--color-white-primary);
     font-size: .8rem;
     font-weight: 500;
 }
@@ -422,7 +421,7 @@ footer {
 /* Experience card description*/
 .experience-card p {
     margin-top: .1rem;
-    color: var(--color-light-gray);
+    color: var(--color-white-primary);
     font-size: .7rem;
     font-weight: 300;
 }
@@ -594,10 +593,6 @@ footer {
 /* 533px */
 @media screen and (min-width: 533px) {
 
-    .fa-bars {
-        font-size: 2rem;
-    }
-
     .skills-card {
         gap: 1rem;
     }
@@ -656,7 +651,8 @@ footer {
     }
 
     .fa-bars {
-        right: 2rem;
+        font-size: 1.8rem;
+        right: 2.5rem;
     }
 
     .hero-icons {
@@ -753,11 +749,15 @@ footer {
 @media screen and (min-width: 1024px) {
 
     .header-title {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .hero {
         text-align: center;
+    }
+
+    .hero-icons .fa-brands {
+        font-size: 1.5rem;
     }
 
     .hero-subtitle__container {
