@@ -5,7 +5,7 @@
     --color-dark-primary: #26262bf3;
     --color-dark-secundary: #29292e;
     --color-green-primary: #3ba787;
-    --color-green-terminal: #339175;
+    --color-green-link: #41b390;
     --color-green-secundary: #3ba78731;
     --color-white: #ffffff;
     --color-white-primary: #e5e5e5;
@@ -14,11 +14,13 @@
 
 /**********************************************/
 
+/* ALL */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* header */
 header {
     height: 3.3rem;
     width: 100%;
@@ -30,6 +32,7 @@ header {
     z-index: 500;
 }
 
+/* body */
 body {
     min-width: 375px;
     display: flex;
@@ -41,6 +44,7 @@ body {
     font-size: 16px;
 }
 
+/* footer */
 footer {
     height: 4rem;
     display: flex;
@@ -52,7 +56,7 @@ footer {
 
 /**********************************************/
 
-/* Header title container*/
+/* Header title container */
 .header-title__container {
     margin: .5rem 0 0 1rem;
 }
@@ -95,7 +99,7 @@ footer {
 
 /* Header links hover */
 .nav-link:hover {
-    color: var(--color-green-primary);
+    color: var(--color-green-link);
 }
 
 /* icon links < */
@@ -110,7 +114,7 @@ footer {
     display: none;
 }
 
-/* Hero ícon menu*/
+/* Hero ícon menu */
 .fa-bars {
     position: absolute;
     top: 1.25rem;
@@ -133,7 +137,7 @@ footer {
     background-color: var(--color-dark-primary);
 }
 
-/* Hero background image*/
+/* Hero background image */
 .hero::before {
     position: absolute;
     top: 0px;
@@ -154,7 +158,7 @@ footer {
     align-items: center;
 }
 
-/* Hero images container*/
+/* Hero images container */
 .img {
     margin-top: 3rem;
 }
@@ -172,7 +176,7 @@ footer {
     z-index: 10;
 }
 
-/* Hero image*/
+/* Hero image */
 .hero-img {
     width: 11rem;
     position: absolute;
@@ -181,7 +185,7 @@ footer {
     z-index: 20;
 }
 
-/* Hero icons container*/
+/* Hero icons container */
 .hero-icons {
     margin: .7rem auto;
     width: auto;
@@ -191,7 +195,7 @@ footer {
     z-index: 30;
 }
 
-/* Hero icons style*/
+/* Hero icons style */
 .hero-link {
     display: flex;
     justify-content: center;
@@ -205,12 +209,19 @@ footer {
     z-index: 30;
 }
 
-/* Hero icons*/
+/* Hero icons style hover */
+.hero-link:hover {
+    width: 2.7rem;
+    height: 2.7rem;
+    background-color: var(--color-green-primary);
+}
+
+/* Hero icons */
 .hero-icons .fa-brands {
     font-size: 1.4rem;
 }
 
-/* Hero title*/
+/* Hero title */
 .hero-title {
     margin-top: 1rem;
     color: var(--color-white-primary);
@@ -233,17 +244,17 @@ footer {
     border-radius: 1.5rem;
 }
 
-/* Hero subtitle*/
+/* Hero subtitle */
 .hero-subtitle {
     color: var(--color-white-primary);
     font-size: 1rem;
     font-weight: 400;
 }
 
-/* Hero subtitle info*/
+/* Hero subtitle info */
 .hero-subtitle__info {
     margin-top: 1rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     letter-spacing: .1rem;
     font-weight: 600;
     color: var(--color-white-primary);
@@ -256,7 +267,7 @@ footer {
     z-index: 100;
 }
 
-/* Hero button container*/
+/* Hero button container */
 .hero-btn-div {
     margin: 1.5rem auto 1.5rem;
     padding: .7rem;
@@ -268,19 +279,24 @@ footer {
     gap: .8rem;
 }
 
-/* Hero button link*/
+/* Hero button hover */
+.hero-btn-div:hover {
+    background-color: var(--color-green-primary);
+}
+
+/* Hero button link */
 .hero-btn-link {
     color: var(--color-light-gray);
     text-decoration: none;
 }
 
-/* Hero button title*/
+/* Hero button title */
 .hero-btn-link h4 {
     font-size: 1.1rem;
     font-weight: 400;
 }
 
-/* Hero button icon*/
+/* Hero button icon */
 .fa-envelope {
     margin-right: -.25rem;
     font-size: 1.1rem;
@@ -302,9 +318,10 @@ footer {
     font-size: 1.5rem;
 }
 
+/* Container icon titles */
 .container .fa-angle-right {
     padding: 0 .5rem;
-    color: var(--color-green-terminal);
+    color: var(--color-green-link);
     font-size: 1.5rem;
 }
 
@@ -317,7 +334,7 @@ footer {
     text-align: center;
 }
 
-/* About me description*/
+/* About me description */
 .about-me p {
     margin-top: 1.5rem;
     color: var(--color-light-gray);
@@ -325,6 +342,7 @@ footer {
     font-weight: 400;
 }
 
+/* About me span */
 .about-me span {
     color: var(--color-green-primary);
     font-size: 1.2rem;
@@ -340,7 +358,7 @@ footer {
     flex-direction: column;
 }
 
-/* Skills title*/
+/* Skills title */
 .skills h2 {
     text-align: center;
 }
@@ -352,7 +370,7 @@ footer {
     width: 95vw;
 }
 
-/* Skills container*/
+/* Skills container */
 .skills-card {
     margin-top: 1.5rem;
     padding: 1rem 0;
@@ -362,7 +380,7 @@ footer {
     gap: 1.1rem;
 }
 
-/* Skills card*/
+/* Skills card */
 .card {
     min-width: 15rem;
     min-height: 12rem;
@@ -380,7 +398,7 @@ footer {
     display: flex;
 }
 
-/* Skills card icons*/
+/* Skills card icons */
 .icon-skill {
     display: inline-block;
     width: 1.2rem;
@@ -388,7 +406,7 @@ footer {
     margin-left: .5rem;
 }
 
-/* Skills card title*/
+/* Skills card title */
 .card h4 {
     margin-bottom: .7rem;
     margin-left: .5rem;
@@ -396,7 +414,7 @@ footer {
     font-weight: 600;
 }
 
-/* Skills card description*/
+/* Skills card description */
 .card p {
     color: var(--color-light-gray);
     font-size: 1rem;
@@ -404,12 +422,20 @@ footer {
     font-weight: 300;
 }
 
+/* Skills links */
 .skill-projects {
     margin-top: 2.5rem;
+    display: inline-block;
     color: var(--color-green-primary);
     font-weight: 500;
     text-decoration: none;
     text-align: center;
+}
+
+/* Skills links hover */
+.skill-projects:hover {
+    color: var(--color-green-link);
+    text-decoration: underline;
 }
 
 /**********************************************/
@@ -429,6 +455,7 @@ footer {
     text-align: center;
 }
 
+/* Experience container */
 .experience-container {
     width: 95vw;
     display: flex;
@@ -436,31 +463,37 @@ footer {
     justify-content: space-evenly;
 }
 
-/* Experience card*/
+/* Experience card */
 .experience-card {
     margin: 0 auto 1.2rem;
     padding: 1rem;
-    width: 80%;
+    width: 75vw;
+    height: 5rem;
     display: flex;
-    justify-content: space-around;
-    background-color: var(--color-green-primary);
-    border: .1rem solid var(--color-dark);
-    border-radius: .5rem;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--color-dark-primary);
+    border: .1rem solid var(--color-green-primary);
+    border-radius: 1rem;
+    box-shadow: 2px 5px 10px var(--color-dark);
 }
 
-/* Experience icons*/
-.experience-img .fa-brands {
-    margin-left: -1rem;
-    color: var(--color-white-primary);
-    font-size: 4rem;
+.academlo-logo {
+    margin-left: -2rem;
+    width: 8rem;
 }
 
-/* Experience card text*/
+.fa-free-code-camp {
+    margin-right: 2rem;
+    font-size: 3.5rem;
+}
+
+/* Experience card text */
 .card-exp {
     margin-left: -1rem;
 }
 
-/* Experience card title*/
+/* Experience card title */
 .experience-card h4 {
     color: var(--color-white);
     font-size: 1rem;
@@ -475,7 +508,7 @@ footer {
     font-weight: 500;
 }
 
-/* Experience card description*/
+/* Experience card description */
 .experience-card p {
     margin-top: .1rem;
     color: var(--color-white-primary);
@@ -483,9 +516,9 @@ footer {
     font-weight: 300;
 }
 
-/* Experience card year*/
+/* Experience card year */
 .experience-card .card-year {
-    margin-top: 2rem;
+    margin-top: 3rem;
     color: var(--color-white-primary);
     font-size: 1rem;
     font-weight: 500;
@@ -581,12 +614,12 @@ footer {
     align-items: center;
 }
 
-/* Contact card links*/
+/* Contact card links */
 .contact-link {
     text-decoration: none;
 }
 
-/* Contact card icons style */
+/* Contact phone icon */
 .icon-cel {
     width: 4rem;
     height: 4rem;
@@ -597,13 +630,18 @@ footer {
     border: .2rem solid var(--color-green-primary);
 }
 
+/* Contact phone link hover */
+.icon-cel:hover {
+    background-color: var(--color-green-primary);
+}
+
 /* Contact icon phone */
 .fa-phone {
     color: var(--color-light-gray);
     font-size: 2rem;
 }
 
-/* Contact card icons */
+/* Contact email icon */
 .icon-email {
     width: 4rem;
     height: 4rem;
@@ -612,6 +650,11 @@ footer {
     align-items: center;
     border-radius: 3rem;
     border: .2rem solid var(--color-green-primary);
+}
+
+/* Contact email link hover */
+.icon-email:hover {
+    background-color: var(--color-green-primary);
 }
 
 /* Contact icon email */
@@ -752,14 +795,21 @@ footer {
     }
 
     .experience-card {
-        width: 10rem;
+        height: 18rem;
+        width: 12rem;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         text-align: center;
     }
 
+    .academlo-logo {
+        margin: 0;
+        width: 10rem;
+    }
+
     .experience-img .fa-brands {
-        margin: 2rem auto .5rem;
+        margin: 3rem auto;
         font-size: 5rem;
     }
 
@@ -847,6 +897,7 @@ footer {
 
     .hero-subtitle__info {
         margin-top: 0;
+        font-size: 1.3rem;
         font-weight: 300;
     }
 
@@ -861,9 +912,9 @@ footer {
 
     .skills-card {
         margin: 1rem auto 0;
-        width: 80vw;
+        width: 90vw;
         justify-content: space-evenly;
-        gap: 3rem;
+        gap: 2rem;
     }
 
     .card {
