@@ -132,7 +132,7 @@ footer {
 .nav-menu {
     padding: 2rem 1rem;
     position: absolute;
-    top: 3.4rem;
+    top: 3rem;
     right: 0;
     display: none;
     flex-direction: column;
@@ -145,7 +145,7 @@ footer {
 .nav-menu a {
     color: var(--color-light-gray);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .nav-menu a:hover {
