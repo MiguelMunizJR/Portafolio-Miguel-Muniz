@@ -22,13 +22,14 @@
 
 /* header */
 header {
-    height: 3.3rem;
+    height: 3rem;
     width: 100%;
     position: fixed;
     top: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    background-color: #29292e;
     z-index: 500;
 }
 
@@ -100,6 +101,8 @@ footer {
 /* Header links hover */
 .nav-link:hover {
     color: var(--color-green-link);
+    transform: scale(1.01);
+    transition: all 0.1s ease-in-out;
 }
 
 /* icon links < */
@@ -117,13 +120,36 @@ footer {
 /* Hero ícon menu */
 .fa-bars {
     position: absolute;
-    top: 1.25rem;
+    top: 1rem;
     right: 1rem;
     display: flex;
     font-size: 1.5rem;
     color: var(--color-green-primary);
     z-index: 550;
     cursor: pointer;
+}
+
+.nav-menu {
+    padding: 2rem 1rem;
+    position: absolute;
+    top: 3.4rem;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    width: 12rem;
+    height: 70rem;
+    background-color: var(--color-dark-secundary);
+    gap: 3rem;
+}
+
+.nav-menu a {
+    color: var(--color-light-gray);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-menu a:hover {
+    color: var(--color-green-link);
 }
 
 /**********************************************/
@@ -214,6 +240,8 @@ footer {
     width: 2.7rem;
     height: 2.7rem;
     background-color: var(--color-green-primary);
+    transform: scale(1.10);
+    transition: all 0.15s ease-in-out;
 }
 
 /* Hero icons */
@@ -282,6 +310,8 @@ footer {
 /* Hero button hover */
 .hero-btn-div:hover {
     background-color: var(--color-green-primary);
+    transform: scale(1.10);
+    transition: all 0.15s ease-in-out;
 }
 
 /* Hero button link */
@@ -425,7 +455,9 @@ footer {
 /* Skills links */
 .skill-projects {
     margin-top: 2.5rem;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--color-green-primary);
     font-weight: 500;
     text-decoration: none;
@@ -436,6 +468,12 @@ footer {
 .skill-projects:hover {
     color: var(--color-green-link);
     text-decoration: underline;
+    transform: scale(1.05);
+    transition: all 0.1s;
+}
+
+.uiux-skill {
+    margin-top: 4.2rem;
 }
 
 /**********************************************/
@@ -467,7 +505,8 @@ footer {
 .experience-card {
     margin: 0 auto 1.2rem;
     padding: 1rem;
-    width: 75vw;
+    min-width: 18rem;
+    width: 70vw;
     height: 5rem;
     display: flex;
     justify-content: space-evenly;
@@ -545,7 +584,6 @@ footer {
 /* Portfolio images container */
 .img-container {
     padding: 3rem;
-    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -633,6 +671,8 @@ footer {
 /* Contact phone link hover */
 .icon-cel:hover {
     background-color: var(--color-green-primary);
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
 }
 
 /* Contact icon phone */
@@ -655,6 +695,8 @@ footer {
 /* Contact email link hover */
 .icon-email:hover {
     background-color: var(--color-green-primary);
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
 }
 
 /* Contact icon email */
@@ -853,9 +895,18 @@ footer {
 /* 850px */
 @media screen and (min-width: 850px) {
 
+    header {
+        height: 3.5rem;
+    }
+
     .nav {
         display: flex;
         right: 1rem;
+    }
+
+    .nav-menu {
+        display: none;
+        opacity: 0;
     }
 
     .fa-bars {
@@ -864,7 +915,7 @@ footer {
     }
 
     .img {
-        margin-top: 3rem;
+        margin-top: 3.2rem;
     }
 }
 
@@ -907,12 +958,12 @@ footer {
     }
 
     .about-me {
-        width: 80vw;
+        max-width: 1100px;
     }
 
     .skills-card {
         margin: 1rem auto 0;
-        width: 90vw;
+        max-width: 1100px;
         justify-content: space-evenly;
         gap: 2rem;
     }
@@ -929,28 +980,33 @@ footer {
 
     .experience {
         margin: 0 auto;
-        width: 70vw;
     }
     
     .experience-container {
-        width: 70vw;
+        max-width: 1100px;
         justify-content: space-evenly;
         gap: 3rem;
     }
 
     .projects {
-        width: 80vw;
+        max-width: 1500px;
     }
 
     .img-container {
         margin: 0 auto;
         padding: 3rem;
         width: fit-content;
-        gap: 8vw;
+        gap: 2vw;
+    }
+
+    .img-h:hover {
+        transform: scale(1.12);
+        transition: all 0.15s ease-in-out;
+        cursor: pointer;
     }
 
     .contact-container {
-        width: 75vw;
+        max-width: 1100px;
     }
 }
 
